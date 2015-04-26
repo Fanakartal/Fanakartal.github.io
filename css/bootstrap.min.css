@@ -1245,7 +1245,8 @@ h2 .small,
 .h2 .small,
 h3 .small,
 .h3 .small {
-    font-size: 65%
+    font-size: 65%;
+	color: #7b623e
 }
 h4,
 .h4,
@@ -1272,7 +1273,8 @@ h6 .small,
 }
 h1,
 .h1 {
-    font-size: 39px
+    font-size: 39px;
+	font-weight: bold
 }
 h2,
 .h2 {
