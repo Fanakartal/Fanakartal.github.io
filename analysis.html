@@ -310,17 +310,20 @@
 	</div>
 </div>
 
-<script>
+<!--<script>
 	var audio = document.getElementById("theme");
 	audio.autoplay = true;
 	audio.loop = true;
-</script>
+</script>-->
 
 <footer>
-	<audio id="theme" controls>
-		<source src="/audio/main_theme.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
+	<audio>
+	<embed name="theme" src="/audio/main_theme.mp3" loop="false" hidden="true" autostart="true">
 	</audio>
+	<!--<audio id="theme" controls>
+		<source src="/audio/main_theme.mp3" type="audio/mpeg" autostart="true" loop="true">
+		Your browser does not support the audio element.
+	</audio> -->
 </footer>
 
 </body>
