@@ -36,6 +36,26 @@
 			display: flex;
 			justify-content: space-around; /* Distributes buttons evenly */
 		}
+        .btn:nth-child(odd) {
+            background-color: #ff8800;
+            border-color: #e67600;
+            color: white;
+        }
+        .btn:nth-child(even) {
+            background-color: white;
+            border-color: #ff8800;
+            color: #ff8800;
+        }
+        .btn:hover {
+            background-color: #e67600;
+            border-color: #cc6600;
+            color: white;
+        }
+        .btn.active {
+            background-color: #6c757d;
+            border-color: #5a6268;
+            color: white;
+        }
         .content-section {
             display: none;
         }
@@ -55,13 +75,19 @@
             background-color: #ff8800;
             color: white;
         }
+        
     </style>
     <script>
-        function showSection(sectionId) {
+        function showSection(sectionId, button) {
             document.querySelectorAll('.content-section').forEach(section => {
                 section.classList.remove('active-section');
             });
             document.getElementById(sectionId).classList.add('active-section');
+            
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
         }
 		
 		// Open the 'interests' section by default when the page loads
@@ -103,9 +129,9 @@
 				<p>His research interests cover the topics such as player-computer interaction, artificial intelligence for games, psychology in game design, virtual/augmented/mixed reality technologies and graph generators for social networks.</p>
                 </div>
                 <div class="btn-group" role="group">
-                    <button class="btn btn-primary" onclick="showSection('research')"><i class="fa-solid fa-flask"></i> Research Interests</button>
-                    <button class="btn btn-secondary" onclick="showSection('publications')"><i class="fa-solid fa-book"></i> Publications</button>
-                    <button class="btn btn-success" onclick="showSection('courses')"><i class="fa-solid fa-chalkboard-teacher"></i> Courses</button>
+                    <button class="btn" onclick="showSection('research', this)"><i class="fa-solid fa-flask"></i> Research Interests</button>
+                    <button class="btn" onclick="showSection('publications', this)"><i class="fa-solid fa-book"></i> Publications</button>
+                    <button class="btn" onclick="showSection('courses', this)"><i class="fa-solid fa-chalkboard-teacher"></i> Courses</button>
                     <!--<button class="btn btn-warning" onclick="showSection('projects')"><i class="fa-solid fa-project-diagram"></i> Projects</button>-->
                 </div>
                 <div id="research" class="content-section mt-4">
