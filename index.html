@@ -42,6 +42,19 @@
         .active-section {
             display: block;
         }
+        .badge {
+            font-size: 0.8em;
+            padding: 3px 6px;
+            margin-left: 8px;
+        }
+        .badge-article {
+            background-color: #ffbb33;
+            color: #7a4d00;
+        }
+        .badge-proceeding {
+            background-color: #ff8800;
+            color: white;
+        }
     </style>
     <script>
         function showSection(sectionId) {
@@ -110,11 +123,11 @@
                     <input type="text" class="form-control mb-3" id="pubFilter" placeholder="Search Publications..." onkeyup="filterPublications()">
                     <ul id="pubList">
                         <!--<li> </li>-->
-						<li>Uludağlı MÇ, Oğuz K. 2024. From attributes to communities: a novel approach in social network generation. <i>PeerJ Computer Science</i> 10:e2483 <a href="https://doi.org/10.7717/peerj-cs.2483" target="_blank">https://doi.org/10.7717/peerj-cs.2483</a></li>
-						<li>M. Ç. Uludağlı and K. Oğuz, "A Social Network Generator for Games Evaluated Against a Real NPC Network with GPT-Generated Node Attributes," <i>2024 Innovations in Intelligent Systems and Applications Conference (ASYU)</i>, Ankara, Turkiye, 2024, pp. 1-5, doi: 10.1109/ASYU62119.2024.10757171.</li>
-						<li>Uludağlı, M.Ç., Oğuz, K. Non-player character decision-making in computer games. <i>Artif Intell Rev</i> 56, 14159–14191 (2023). <a href="https://doi.org/10.1007/s10462-023-10491-7" target="_blank">https://doi.org/10.1007/s10462-023-10491-7</a></li>
-                        <li>Tekgün E, Uludağlı MÇ, Akcan H, Erdeniz B. Virtual body anthropomorphism increases drift in self-location: Further support for the humanoid shape rule. <i>Comput Anim Virtual Worlds</i>. 2022; 33(2):e2038. <a href="https://doi.org/10.1002/cav.2038" target="_blank">https://doi.org/10.1002/cav.2038</a></li>
-						<li>ULUDAĞLI, MUHTAR ÇAĞKAN and ACARTÜRK, CENGİZ (2018) "User interaction in hands-free gaming: a comparative study of gaze-voice and touchscreen interface control," <i>Turkish Journal of Electrical Engineering and Computer Sciences</i>: Vol. 26: No. 4, Article 24. <a href="https://doi.org/10.3906/elk-1710-128" target="_blank">https://doi.org/10.3906/elk-1710-128</a></li>
+						<li>Uludağlı MÇ, Oğuz K. 2024. From attributes to communities: a novel approach in social network generation. <i>PeerJ Computer Science</i> 10:e2483 <a href="https://doi.org/10.7717/peerj-cs.2483" target="_blank">https://doi.org/10.7717/peerj-cs.2483</a><span class="badge badge-article">Article</span></li>
+						<li>M. Ç. Uludağlı and K. Oğuz, "A Social Network Generator for Games Evaluated Against a Real NPC Network with GPT-Generated Node Attributes," <i>2024 Innovations in Intelligent Systems and Applications Conference (ASYU)</i>, Ankara, Turkiye, 2024, pp. 1-5, doi: 10.1109/ASYU62119.2024.10757171.<span class="badge badge-proceeding">Proceeding</span></li>
+						<li>Uludağlı, M.Ç., Oğuz, K. Non-player character decision-making in computer games. <i>Artif Intell Rev</i> 56, 14159–14191 (2023). <a href="https://doi.org/10.1007/s10462-023-10491-7" target="_blank">https://doi.org/10.1007/s10462-023-10491-7</a><span class="badge badge-article">Article</span></li>
+                        <li>Tekgün E, Uludağlı MÇ, Akcan H, Erdeniz B. Virtual body anthropomorphism increases drift in self-location: Further support for the humanoid shape rule. <i>Comput Anim Virtual Worlds</i>. 2022; 33(2):e2038. <a href="https://doi.org/10.1002/cav.2038" target="_blank">https://doi.org/10.1002/cav.2038</a><span class="badge badge-article">Article</span></li>
+						<li>ULUDAĞLI, MUHTAR ÇAĞKAN and ACARTÜRK, CENGİZ (2018) "User interaction in hands-free gaming: a comparative study of gaze-voice and touchscreen interface control," <i>Turkish Journal of Electrical Engineering and Computer Sciences</i>: Vol. 26: No. 4, Article 24. <a href="https://doi.org/10.3906/elk-1710-128" target="_blank">https://doi.org/10.3906/elk-1710-128</a><span class="badge badge-article">Article</span></li>
                     </ul>
                 </div>
                 <div id="courses" class="content-section mt-4">
